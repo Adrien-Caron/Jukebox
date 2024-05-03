@@ -12,7 +12,7 @@ const config = {
 };
 
 const getData = async () =>{
-    const req = await fetch("https://api-vinyle.onrender.com/api/v1/musics");
+    const req = await fetch("https://api-good.onrender.com/api/V1/musics");
     console.log(req);
     const dbMusic = await req.json();
     data = dbMusic.result ; 
