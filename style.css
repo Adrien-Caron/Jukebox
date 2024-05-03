@@ -1,0 +1,72 @@
+body{
+    background-color: white;
+}
+ul{
+    list-style: none;
+}
+img{
+    border-radius:100%;
+    width : 250px;
+    height : 250px;
+}
+#randomButton {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+
+}
+
+/* Centrer le contenu au milieu de la page */
+#playlist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crée 3 colonnes de largeur égale */
+    gap: 30px; /* Espacement entre les éléments */
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    margin-top: 50px; /* Ajuste la marge selon tes préférences */
+}
+
+li {
+    padding: 20px;
+    border-radius: 30px; /* Bords arrondis */
+    background-color: #f0f0f0; /* Couleur de fond */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombre légère */
+}
+
+h2,
+small {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Centrer l'image */
+}
+
+small {
+    display: block;
+    text-align: center;
+}
+
+#lecteur {
+
+    position: absolute;
+    nav-down: 15px;
+    right: 30%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+@keyframes rotateVinyl {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotateVinyl 10s linear infinite; /* ajustez la durée selon votre préférence */
+}
